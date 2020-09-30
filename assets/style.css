@@ -8,10 +8,14 @@ body {
 a, a:visited {
     color: #78b536;
     text-decoration: none;
-    transition: all 250ms ease;
+    transition: all 500ms ease;
 }
 a:hover {
-    color: #96bf31;
+    color: #a3c42d;
+}
+.logo > img {
+    max-width: 100%;
+    height: auto;
 }
 .container {
     display: flex;
@@ -19,6 +23,8 @@ a:hover {
     align-items: center;
     flex-direction: column;
     height: 100%;
+    max-width: 95vw;
+    margin: auto;
 }
 .contact {
     display: flex;
@@ -29,10 +35,10 @@ a:hover {
     flex-direction: row;
 }
 .contact > * + * {
-    margin-top: 1rem;
+    margin-top: 1.25rem;
 }
 .contact > * > * + * {
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 .contact svg {
     height: 1.25rem;
