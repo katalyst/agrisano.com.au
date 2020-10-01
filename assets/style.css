@@ -1,46 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+
 body {
     font-family: 'Montserrat Alternates', sans-serif;
     background: #fff;
     color: #9baeac;
     height: 100vh;
 }
+
 a, a:visited {
     color: #78b536;
     text-decoration: none;
     transition: all 500ms ease;
 }
-a:hover {
+
+a:hover, a:focus {
     color: #a3c42d;
 }
+
 .logo > img {
     max-width: 100%;
     height: auto;
 }
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     height: 100%;
-    max-width: 95vw;
+    max-width: 90vw;
     margin: auto;
 }
+
 .contact {
     display: flex;
     flex-direction: column;
 }
+
 .contact > * {
     display: flex;
     flex-direction: row;
+    width: 100%;
+    align-items: flex-start;
 }
+
 .contact > * + * {
     margin-top: 1.25rem;
 }
+
+.contact > * > * {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 0 1 auto;
+    min-width: 1.25rem;
+}
+
 .contact > * > * + * {
     margin-left: 1rem;
+    flex-grow: 1;
 }
+
 .contact svg {
     height: 1.25rem;
     width: auto;
+}
+
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }
